@@ -2,6 +2,10 @@ define default
 $(if $(1), $(1), $(2))
 endef
 
+define prefix
+$(if $(1), $(2)=$(1),)
+endef
+
 setup:
 	@touch .backend/home/.nuget
 	@touch .backend/home/.dotnet
@@ -35,3 +39,16 @@ ps:
 	docker compose ps
 status: ps
 
+test:
+	$(MAKE) shell run="dotnet test $(call default,$(call prefix,${filter},--filter=),$(call prefix,${f},--filter=)) ${with}"
+
+restore:
+	$(MAKE) shell run="dotnet restore"
+
+restore-tools:
+	$(MAKE) shell run="dotnet tool restore"
+
+fix:
+	$(MAKE) shell run="dotnet format style"
+	$(MAKE) shell run="dotnet format style --severity=info"
+	$(MAKE) shell run="dotnet format whitespace"
