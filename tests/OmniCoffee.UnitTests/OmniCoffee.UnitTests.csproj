@@ -20,9 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\backend\OmniCoffee.Api\OmniCoffee.Api.csproj" />
-    <ProjectReference Include="..\..\backend\OmniCoffee.Core\OmniCoffee.Core.csproj" />
-    <ProjectReference Include="..\..\backend\OmniCoffee.Application\OmniCoffee.Application.csproj" />
-    <ProjectReference Include="..\..\backend\OmniCoffee.Infrastructure\OmniCoffee.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

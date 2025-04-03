@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OmniCoffee.Core\OmniCoffee.Core.csproj" />
+    <ProjectReference Include="..\OmniCoffee.Infrastructure\OmniCoffee.Infrastructure.csproj" />
+    <ProjectReference Include="..\OmniCoffee.Application\OmniCoffee.Application.csproj" />
+  </ItemGroup>
+
 </Project>
