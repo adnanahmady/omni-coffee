@@ -1,4 +1,4 @@
-﻿namespace OmniCoffee.UnitTests;
+namespace OmniCoffee.UnitTests;
 
 public class UnitTest1
 {

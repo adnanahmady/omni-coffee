@@ -1,4 +1,4 @@
-﻿namespace OmniCoffee.Core;
+namespace OmniCoffee.Core;
 
 public class Class1
 {
